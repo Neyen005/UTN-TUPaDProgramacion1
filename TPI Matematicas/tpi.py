@@ -1,5 +1,11 @@
-opcion = int(input("Seleccione una opcion:\n1- De decimal a binario\n2- De binario a decimal\n"))
- 
+while True:
+    opcion_str = input("Seleccione una opcion:\n1- De decimal a binario\n2- De binario a decimal\n")
+    if opcion_str == '1' or opcion_str == '2':
+        opcion = int(opcion_str)
+        break
+    else:
+        print("Error: Por favor, seleccione la opción 1 o 2.")
+        
 if opcion == 1:
     print("Convertidor de Decimal a Binario")
     numero = int(input("Ingrese el Numero Decimal: "))
